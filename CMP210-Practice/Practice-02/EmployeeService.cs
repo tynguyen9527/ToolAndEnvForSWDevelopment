@@ -18,12 +18,18 @@ namespace Practice_02
             if (employeeType == EmployeeType.Engineer)
             {
                 factor = 1;
-            } else if (employeeType == EmployeeType.SeniorEngineer || employeeType == EmployeeType.Manager)
+            }
+            else if (employeeType == EmployeeType.SeniorEngineer || employeeType == EmployeeType.Manager)
             {
                 factor = 1.5m;
-            } else if (employeeType == EmployeeType.SeniorManager)
+            }
+            else if (employeeType == EmployeeType.SeniorManager)
             {
                 factor = 2;
+            }
+            else if (employeeType == EmployeeType.Expert)
+            {
+                factor = 3;
             }
             // TODO: if employee is Expert, set factor = 3
 
