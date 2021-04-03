@@ -30,8 +30,10 @@ namespace Practice_02
                 case EmployeeType.Expert:
                     factor = 3;
                     break;
+                default:
+                    break;
             }
-
+            
             var salary = BASIC_SALARY * years * factor;
 
             return salary;
