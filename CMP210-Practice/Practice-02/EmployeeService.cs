@@ -28,7 +28,7 @@ namespace Practice_02
             // TODO: if employee is Expert, set factor = 3
             else if(employeeType == EmployeeType.Expert)
             {
-                factor = 3;
+                factor = 3;//Fix the problem
             }
 
             var salary = BASIC_SALARY * years * factor;
