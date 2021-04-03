@@ -17,6 +17,7 @@ namespace Practice_02
 
             switch (employeeType)
             {
+<<<<<<< HEAD
                 case EmployeeType.Engineer:
                     factor = 1;
                     break;
@@ -30,10 +31,26 @@ namespace Practice_02
                 case EmployeeType.Expert:
                     factor = 3;
                     break;
-                default:
-                    break;
             }
             
+=======
+                factor = 1;
+            }
+            else if (employeeType == EmployeeType.SeniorEngineer || employeeType == EmployeeType.Manager)
+            {
+                factor = 1.5m;
+            }
+            else if (employeeType == EmployeeType.SeniorManager)
+            {
+                factor = 2;
+            }
+            else if (employeeType == EmployeeType.Expert)
+            {
+                factor = 3;
+            }
+            // TODO: if employee is Expert, set factor = 3
+
+>>>>>>> master
             var salary = BASIC_SALARY * years * factor;
 
             return salary;
